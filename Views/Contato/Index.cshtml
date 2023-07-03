@@ -1,0 +1,76 @@
+﻿@model ContatoModel
+@{
+    ViewData["Title"] = "Lista de Contactos";
+}
+
+<div class="text-center">
+
+    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+        <a class="btn btn-success" role="button" asp-controller="Contato" asp-action="Criar"> Adicionar novo contacto</a>
+    </div>
+    <br />
+
+    <table class="table caption-top">
+        <caption class="display-5">Lista de contactos</caption>
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Endreço</th>
+                <th scope="col">Contacto</th>
+                <th scope="col">Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>David</td>
+                <td>Cidade de Tete</td>
+                <td>843215766</td>
+                <td>sanculane@gmail.com</td>
+                <td>
+                    <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                        <a role="button" class="btn btn-warning" asp-controller="Contato" asp-action="Editar">Editar</a>
+                        <a role="button" class="btn btn-danger" asp-controller="Contato" asp-action="Apagar">Apagar</a>
+
+                    </div>
+
+                </td>
+
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Conde</td>
+                <td>Beira</td>
+                <td>843215766</td>
+                <td>sanculane@gmail.com</td>
+                <td>
+                    <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                        <a role="button" class="btn btn-warning" asp-controller="Contato" asp-action="Editar">Editar</a>
+                        <a role="button" class="btn btn-danger" asp-controller="Contato" asp-action="Apagar">Apagar</a>
+
+                    </div>
+
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>Jequecene</td>
+                <td>Cape Town</td>
+                <td>843215766</td>
+                <td>sanculane@gmail.com</td>
+                <td>
+                    <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                        <a role="button" class="btn btn-warning" asp-controller="Contato" asp-action="Editar">Editar</a>
+                        <a role="button" class="btn btn-danger" asp-controller="Contato" asp-action="Apagar">Apagar</a>
+
+                    </div>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
+
+

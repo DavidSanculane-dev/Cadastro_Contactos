@@ -1,0 +1,11 @@
+﻿@model ContatoModel
+@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Bem vindo, @Model.Nome</h1>
+    <p>Software de cadastro de contactos <a href="https://davidsoft.webs.com">saiba mais</a>.</p>
+    <p><span>Endereço: @Model.Endereco</span></p>
+    <span>Email: @Model.Email</span>
+</div>
